@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author yx
- * @date 2020/9/9 15:36
+ * @since 2020/9/9 15:36
  */
-@DubboService
+@DubboService(version = "0.1")
 @Service
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements OrderService {
 
