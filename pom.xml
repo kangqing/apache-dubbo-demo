@@ -67,6 +67,7 @@
 
     <modules>
         <module>dubbo-pojo</module>
+        <module>dubbo-user-server</module>
     </modules>
 
     <build>

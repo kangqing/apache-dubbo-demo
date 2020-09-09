@@ -19,6 +19,8 @@
 		<mp.starter>3.3.1</mp.starter>
 		<mp.generator>3.3.1</mp.generator>
 		<freemarker>2.3.30</freemarker>
+		<apache.dubbo>2.7.8</apache.dubbo>
+		<alibaba.nacos>1.3.2</alibaba.nacos>
 	</properties>
 
 	<dependencies>
@@ -43,6 +45,18 @@
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
 			<version>${freemarker}</version>
+		</dependency>
+		<!--dubbo-->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>${apache.dubbo}</version>
+		</dependency>
+		<!--nacos注册中心-->
+		<dependency>
+			<groupId>com.alibaba.nacos</groupId>
+			<artifactId>nacos-client</artifactId>
+			<version>${alibaba.nacos}</version>
 		</dependency>
 	</dependencies>
 
