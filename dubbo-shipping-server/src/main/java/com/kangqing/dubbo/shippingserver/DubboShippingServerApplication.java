@@ -1,0 +1,17 @@
+package com.kangqing.dubbo.shippingserver;
+
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EnableDubbo
+@MapperScan("com.kangqing.dubbo.mapper")
+@SpringBootApplication
+public class DubboShippingServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DubboShippingServerApplication.class, args);
+	}
+
+}
