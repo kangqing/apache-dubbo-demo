@@ -22,7 +22,8 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-@DubboService
+//设置3秒超时，重试次数3次
+@DubboService(timeout = 3000, retries = 3)
 public class ShippingServiceImpl extends ServiceImpl<ShippingMapper, Shipping> implements ShippingService {
 
     private final ShippingMapper shippingMapper;
