@@ -2,8 +2,8 @@ dubbo:
   application:
     name: shipping-server # 注册服务名
   registry:
-    #address: zookeeper://127.0.0.1:2181
-    address: nacos://127.0.0.1:8848 # 注册中心地址
+    address: zookeeper://127.0.0.1:2181
+    #address: nacos://127.0.0.1:8848 # 注册中心地址
   protocol:
     name: dubbo # 协议
     port: 20881 # 协议端口
@@ -18,4 +18,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
-  port: 8081
+  port: 8082
